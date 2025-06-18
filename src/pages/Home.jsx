@@ -1,14 +1,17 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import "./index.css";
-import Home from "../pages/home"; // Use 'H' if your file is named 'Home.jsx'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+
+
 
 function App() {
   return (
-    <Router>
-      <div className="relative">
-        <Home />
-      </div>
-    </Router>
+    <div className="relative">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+    </div>
   );
 }
 
