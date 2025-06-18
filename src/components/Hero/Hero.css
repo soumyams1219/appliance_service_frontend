@@ -1,0 +1,102 @@
+/* Hero.css - Modern & Trending Design */
+
+/* Variables for consistency */
+:root {
+  --primary: #007bff;
+  --success: #28a745;
+  --warning: #ffc107;
+  --dark: #1c1c1e;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+  --text-dark: #212529;
+  --border-radius: 1rem;
+  --transition: all 0.3s ease-in-out;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Utility classes */
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+/* Hero Banner */
+.hero-banner {
+  background: linear-gradient(135deg, var(--dark), #2c2c2e);
+  color: #fff;
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.hero-banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hero-banner p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+.hero-banner .btn {
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+}
+
+/* Speciality Cards */
+.speciality-tile {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  height: 100%;
+}
+.speciality-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+.speciality-tile i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* About Section */
+.about-text {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: var(--gray);
+  text-align: center;
+}
+
+/* Contact Section */
+#contact {
+  background: var(--light);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+#contact p {
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 2rem;
+  }
+  .hero-banner h1 {
+    font-size: 2.2rem;
+  }
+  .speciality-tile {
+    padding: 1.5rem;
+  }
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
