@@ -1,12 +1,15 @@
-import Hero from "../components/Hero/Hero"
+import { BrowserRouter as Router } from "react-router-dom";
+import "./index.css";
+import Home from "../pages/home"; // Use 'H' if your file is named 'Home.jsx'
 
-const Home = () => {
+function App() {
   return (
-    <div>
-      <Hero />
-      <h1>This is my page</h1>
-    </div>
+    <Router>
+      <div className="relative">
+        <Home />
+      </div>
+    </Router>
   );
-};
+}
 
-export default Home;
+export default App;
